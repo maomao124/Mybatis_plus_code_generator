@@ -2,20 +2,26 @@ package mao.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+
+import java.io.Serial;
 import java.io.Serializable;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author mao
- * @since 2022-04-08
+ * @since 2022 -04-08
  */
+
+
 @ApiModel(value = "Student对象", description = "")
-public class Student implements Serializable {
+public class Student implements Serializable
+{
 
     private static final long serialVersionUID = 1L;
 
@@ -60,126 +66,283 @@ public class Student implements Serializable {
     private String remarks;
 
 
-    public Long getStudentNo() {
+    /**
+     * Gets student no.
+     *
+     * @return the student no
+     */
+    public Long getStudentNo()
+    {
         return studentNo;
     }
 
-    public void setStudentNo(Long studentNo) {
+    /**
+     * Sets student no.
+     *
+     * @param studentNo the student no
+     */
+    public void setStudentNo(Long studentNo)
+    {
         this.studentNo = studentNo;
     }
 
-    public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName()
+    {
         return name;
     }
 
-    public void setName(String name) {
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name)
+    {
         this.name = name;
     }
 
-    public String getSex() {
+    /**
+     * Gets sex.
+     *
+     * @return the sex
+     */
+    public String getSex()
+    {
         return sex;
     }
 
-    public void setSex(String sex) {
+    /**
+     * Sets sex.
+     *
+     * @param sex the sex
+     */
+    public void setSex(String sex)
+    {
         this.sex = sex;
     }
 
-    public String getTelephoneNumber() {
+    /**
+     * Gets telephone number.
+     *
+     * @return the telephone number
+     */
+    public String getTelephoneNumber()
+    {
         return telephoneNumber;
     }
 
-    public void setTelephoneNumber(String telephoneNumber) {
+    /**
+     * Sets telephone number.
+     *
+     * @param telephoneNumber the telephone number
+     */
+    public void setTelephoneNumber(String telephoneNumber)
+    {
         this.telephoneNumber = telephoneNumber;
     }
 
-    public String getFamilyTelephoneNumber() {
+    /**
+     * Gets family telephone number.
+     *
+     * @return the family telephone number
+     */
+    public String getFamilyTelephoneNumber()
+    {
         return familyTelephoneNumber;
     }
 
-    public void setFamilyTelephoneNumber(String familyTelephoneNumber) {
+    /**
+     * Sets family telephone number.
+     *
+     * @param familyTelephoneNumber the family telephone number
+     */
+    public void setFamilyTelephoneNumber(String familyTelephoneNumber)
+    {
         this.familyTelephoneNumber = familyTelephoneNumber;
     }
 
-    public String getBirthday() {
+    /**
+     * Gets birthday.
+     *
+     * @return the birthday
+     */
+    public String getBirthday()
+    {
         return birthday;
     }
 
-    public void setBirthday(String birthday) {
+    /**
+     * Sets birthday.
+     *
+     * @param birthday the birthday
+     */
+    public void setBirthday(String birthday)
+    {
         this.birthday = birthday;
     }
 
-    public String getAddress() {
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
+    public String getAddress()
+    {
         return address;
     }
 
-    public void setAddress(String address) {
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
+    public void setAddress(String address)
+    {
         this.address = address;
     }
 
-    public String getIdCard() {
+    /**
+     * Gets id card.
+     *
+     * @return the id card
+     */
+    public String getIdCard()
+    {
         return idCard;
     }
 
-    public void setIdCard(String idCard) {
+    /**
+     * Sets id card.
+     *
+     * @param idCard the id card
+     */
+    public void setIdCard(String idCard)
+    {
         this.idCard = idCard;
     }
 
-    public String getEmail() {
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
+    public String getEmail()
+    {
         return email;
     }
 
-    public void setEmail(String email) {
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
+    public void setEmail(String email)
+    {
         this.email = email;
     }
 
-    public String getDormitoryNumber() {
+    /**
+     * Gets dormitory number.
+     *
+     * @return the dormitory number
+     */
+    public String getDormitoryNumber()
+    {
         return dormitoryNumber;
     }
 
-    public void setDormitoryNumber(String dormitoryNumber) {
+    /**
+     * Sets dormitory number.
+     *
+     * @param dormitoryNumber the dormitory number
+     */
+    public void setDormitoryNumber(String dormitoryNumber)
+    {
         this.dormitoryNumber = dormitoryNumber;
     }
 
-    public Long getClassNo() {
+    /**
+     * Gets class no.
+     *
+     * @return the class no
+     */
+    public Long getClassNo()
+    {
         return classNo;
     }
 
-    public void setClassNo(Long classNo) {
+    /**
+     * Sets class no.
+     *
+     * @param classNo the class no
+     */
+    public void setClassNo(Long classNo)
+    {
         this.classNo = classNo;
     }
 
-    public String getState() {
+    /**
+     * Gets state.
+     *
+     * @return the state
+     */
+    public String getState()
+    {
         return state;
     }
 
-    public void setState(String state) {
+    /**
+     * Sets state.
+     *
+     * @param state the state
+     */
+    public void setState(String state)
+    {
         this.state = state;
     }
 
-    public String getRemarks() {
+    /**
+     * Gets remarks.
+     *
+     * @return the remarks
+     */
+    public String getRemarks()
+    {
         return remarks;
     }
 
-    public void setRemarks(String remarks) {
+    /**
+     * Sets remarks.
+     *
+     * @param remarks the remarks
+     */
+    public void setRemarks(String remarks)
+    {
         this.remarks = remarks;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Student{" +
-        "studentNo=" + studentNo +
-        ", name=" + name +
-        ", sex=" + sex +
-        ", telephoneNumber=" + telephoneNumber +
-        ", familyTelephoneNumber=" + familyTelephoneNumber +
-        ", birthday=" + birthday +
-        ", address=" + address +
-        ", idCard=" + idCard +
-        ", email=" + email +
-        ", dormitoryNumber=" + dormitoryNumber +
-        ", classNo=" + classNo +
-        ", state=" + state +
-        ", remarks=" + remarks +
-        "}";
+                "studentNo=" + studentNo +
+                ", name=" + name +
+                ", sex=" + sex +
+                ", telephoneNumber=" + telephoneNumber +
+                ", familyTelephoneNumber=" + familyTelephoneNumber +
+                ", birthday=" + birthday +
+                ", address=" + address +
+                ", idCard=" + idCard +
+                ", email=" + email +
+                ", dormitoryNumber=" + dormitoryNumber +
+                ", classNo=" + classNo +
+                ", state=" + state +
+                ", remarks=" + remarks +
+                "}";
     }
 }
